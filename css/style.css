@@ -461,6 +461,8 @@ section {
     backface-visibility: hidden;
     transform: translateZ(0);
     will-change: transform;
+    z-index: 5;
+    /* Ensure image is above background shapes */
 }
 
 .img-wrapper img {

@@ -29,6 +29,8 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+    background-color: var(--bg-color);
+    /* Fix for overscroll void */
 }
 
 body {
@@ -736,7 +738,9 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    height: 100dvh;
+    /* Dynamic viewport height */
     z-index: -1;
     pointer-events: none;
 }

@@ -28,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    min-height: 100%;
 }
 
 a {
@@ -938,5 +940,20 @@ footer {
         width: 250px;
         height: 250px;
         margin-bottom: 40px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .role {
+        font-size: 1.1rem;
+    }
+
+    .loader-logo {
+        font-size: 3rem;
     }
 }

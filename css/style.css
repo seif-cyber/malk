@@ -426,14 +426,12 @@ section {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
 }
 
 .hero-content .role {
     font-size: 2rem;
     color: var(--text-muted);
     margin-bottom: 30px;
-    white-space: nowrap;
 }
 
 .hero-content .typing-text {
@@ -444,6 +442,7 @@ section {
 .hero-btns {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -569,7 +568,7 @@ section {
 
 .skills-category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
 }

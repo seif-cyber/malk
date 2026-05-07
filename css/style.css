@@ -559,59 +559,80 @@ section {
 /* =========================================
    7. Skills Section
    ========================================= */
-.skills-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+.skills-section-subtitle {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
 }
 
-.skill-card {
+.skills-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.skill-category-card {
     background: var(--bg-light);
-    padding: 30px 40px;
+    padding: 30px;
     border-radius: 15px;
-    text-align: center;
     border: 1px solid var(--glass-border);
     transition: var(--transition);
-    min-width: 150px;
 }
 
-.skill-card:hover {
-    transform: translateY(-10px);
+.skill-category-card:hover {
+    transform: translateY(-5px);
     background: var(--glass-bg);
     border-color: var(--secondary-color);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
 }
 
-.skill-card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: var(--text-color);
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--glass-border);
 }
 
-.skill-card .html-icon {
+.category-header .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.category-header .html-icon {
     color: #e34c26;
 }
 
-.skill-card .css-icon {
-    color: #264de4;
+.category-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-.skill-card .js-icon {
-    color: #f7df1e;
+.skill-list {
+    list-style: none;
 }
 
-.skill-card .responsive-icon {
-    color: #00d4ff;
+.skill-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.4;
 }
 
-.skill-card .git-icon {
-    color: #f1502f;
-}
-
-.skill-card h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
+.skill-list .bullet {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    margin-top: 2px;
 }
 
 /* =========================================
